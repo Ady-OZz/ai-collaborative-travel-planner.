@@ -1,15 +1,14 @@
 {
   "name": "ai-collaborative-travel-planner",
-  "version": "1.0.0",
-  "description": "AI-powered collaborative travel planner",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "start": "vercel dev",
-    "deploy": "vercel"
+    "deploy": "vercel",
+    "build": "cd frontend && npm install && npm run build"
   },
   "dependencies": {
-    "firebase-admin": "^11.11.0",
-    "@google/generative-ai": "^0.1.0",
+    "firebase-admin": "^12.0.0",
+    "@google/generative-ai": "^0.15.0",
     "cors": "^2.8.5"
   }
 }
